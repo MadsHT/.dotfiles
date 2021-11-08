@@ -55,7 +55,7 @@ alias deactivatePy=""
 alias open='explorer.exe'
 
 eval `dircolors ~/.dircolors/dircolors.ansi-dark`
-source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
