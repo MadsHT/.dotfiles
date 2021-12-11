@@ -21,5 +21,14 @@ mkdir -p ~/.oh-my-zsh && mkdir -p ~/.oh-my-zsh/themes
 ln -sf $(pwd)/.oh-my-zsh/themes/* ~/.oh-my-zsh/themes
 echo "✔ oh my zsh configured!"
 
+mkdir -p ~/.dircolors
+ln -sf $(pwd)/.dircolors/* ~/.dircolors
+echo "✔ Dircolor symlinked"
+
+mkdir -p ~/powerlevel10k/
+ln -sf $(pwd)/powerlevel10k/powerlevel10k.zsh-theme ~/powerlevel10k/powerlevel10k.zsh-theme
+ln -sf $(pwd)/.p10k.zsh ~/.p10k.zsh
+echo "✔ Powerlevel10k symlinked"
+
 ln -sf $(pwd)/.zshrc ~/.zshrc
 echo "✔ .zshrc symlinked"
