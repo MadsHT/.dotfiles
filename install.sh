@@ -32,3 +32,6 @@ echo "✔ Powerlevel10k symlinked"
 
 ln -sf $(pwd)/.zshrc ~/.zshrc
 echo "✔ .zshrc symlinked"
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo "✔ brew installed"
