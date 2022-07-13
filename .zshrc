@@ -38,7 +38,8 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-export KUBECONFIG=/mnt/c/Users/madst/.kube/config
+#export KUBECONFIG=/mnt/c/Users/madst/.kube/config
+export EDITOR='nano'
 export PATH=/usr/local/bin:$PATH
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -58,11 +59,12 @@ eval `dircolors ~/.dircolors/dircolors.ansi-dark`
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/mht/.profile
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/mht/.profile
+#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/vault/1.8.2/bin/vault vault
+source <(minikube completion zsh)
