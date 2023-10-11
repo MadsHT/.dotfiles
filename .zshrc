@@ -18,7 +18,6 @@ export ZSH=$HOME/.oh-my-zsh
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git helm kubectl z brew vscode zsh-autosuggestions)
 
-source <(kubectl completion zsh)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -55,7 +54,7 @@ alias activatePy="python3 -m venv venv; . ./venv/bin/activate;"
 alias deactivatePy=""
 alias open='explorer.exe'
 
-eval `dircolors ~/.dircolors/dircolors.ansi-dark`
+# eval `dircolors ~/.dircolors/dircolors.ansi-dark`
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -67,4 +66,5 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/vault/1.8.2/bin/vault vault
-source <(minikube completion zsh)
+#source <(minikube completion zsh)
+#source <(kubectl completion zsh)
