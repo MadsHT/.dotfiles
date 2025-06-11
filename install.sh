@@ -35,3 +35,11 @@ echo "✔ .zshrc symlinked"
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "✔ brew installed"
+
+sudo apt update
+sudo apt upgrade -y
+
+
+sudo add-apt-repository ppa:wslutilities/wslu -y
+sudo apt update
+sudo apt install wslu -y

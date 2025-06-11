@@ -18,7 +18,6 @@ export ZSH=$HOME/.oh-my-zsh
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git helm kubectl z brew vscode zsh-autosuggestions)
 
-source <(kubectl completion zsh)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -65,6 +64,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+export BROWSER=wslview
+
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/vault/1.8.2/bin/vault vault
-source <(minikube completion zsh)
+source <(kubectl completion zsh)
